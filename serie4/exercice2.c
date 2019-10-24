@@ -24,13 +24,11 @@ debut
 			tailleSeq  <- 1
 		finsi	
 	finPour
-				nbSequence <- nbSequence + 1
+			nbSequence <- nbSequence + 1
 			si (tailleSeq > taillePlusGrandeSeq) alors
 				taillePlusGrandeSeq <- tailleSeq
 				indDebutPGS<- indSeqCour	
 			finsi
-			indSeqCour <- i+1
-			tailleSeq  <- 1
 	indFinPGS <- indDebutPGS + taillePlusGrandeSeq - 1
 fin	
 	
