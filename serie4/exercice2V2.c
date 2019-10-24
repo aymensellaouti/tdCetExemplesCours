@@ -11,7 +11,7 @@ debut
 	nbSequences <- 0 
 	taillePGS<- 1 
 	Pour(i<-1 à n) faire
-		si (t[i] > t[i+1] ou i = n ) alors
+		si (i = n ou t[i] > t[i+1] ) alors
 			nbSequences <- nbSequences + 1
 			si (tailleSequences > taillePGS) alors
 				taillePGS <- tailleSequences
