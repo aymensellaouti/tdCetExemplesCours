@@ -44,10 +44,25 @@ void affichageStatic2D(int t[][10], int l, int c) {
 
 
 int main() {
+	/*
 	int* t= NULL;
 	allouerDynTabEntier(&t, 5);
 	remplirTab(t,5);
 	afficherTableau1D(t,5);
 	free(t);
 	afficherTableau1D(t,5);	
+	*/
+	int i = 0, n = 3 ;
+	int** t2d = NULL;
+	
+	t2d = (int**) malloc(n*sizeof(int*)); 
+	
+	for(i = 0 ; i < n ; i++ ){
+		t2d[i]=(int*) malloc((i+1)*sizeof(int));
+		remplirTab(t2d[i],i+1);
+	}
+	for(i = 0 ; i < n ; i++ ){
+		afficherTableau1D(t2d[i],i+1);
+		printf("\n");
+	}
 }
