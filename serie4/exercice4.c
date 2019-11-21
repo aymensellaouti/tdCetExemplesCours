@@ -95,7 +95,7 @@ void remplirTab(int* t, int n ){
 	}
 }
 
-void afficherTab(int* t, int n){
+void afficherTab(int t[], int n){
 	int i = 0;	
 	for(i = 0; i<n; i++ ){
 		printf("%d\t ", t[i]);
